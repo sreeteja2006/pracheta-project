@@ -67,3 +67,6 @@ validate_amount() – checks if the amount is a number
 🧪 Tests
 There are some basic test files in the tests/ folder to check if the important parts work properly. You can run them using Python's unittest module.
 
+
+You can find the source code and contribute to the project here: [Personal Finance Tracker Repository](https://github.com/sreeteja2006/pracheta-project)
+
