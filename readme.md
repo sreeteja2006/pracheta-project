@@ -1,32 +1,69 @@
-# Personal Finance Tracker
-A simple yet powerful tool to help you manage your finances effectively. This personal finance tracker allows you to log your income and expenses, providing valuable insights into your spending habits.
+💰 Personal Finance Tracker
+Hey! This is a small project I made to help keep track of my income and expenses. It's a command-line tool where you can add your daily transactions and check how much you're spending and saving.
 
-# Why Use It?
-Easy to Use: The tracker is designed with simplicity in mind, making it easy for anyone to start managing their finances.
+🙌 Why I Made This
+As a student, I always lose track of where my money goes. So I made this basic finance tracker to manage my money better. It’s simple, easy to use, and runs in the terminal.
 
-Customizable: You can categorize your transactions as income or expenses, helping you understand where your money is going.
+🔧 Features
+Add income or expense
 
-Insightful: Generate monthly spending summaries to identify trends and areas for improvement.
+View all your transactions
 
-Persistent Data: Your transactions are saved securely, so you can access them anytime.
+Check total income, total expense, and balance
 
-# Features
-Add, Edit, Delete Transactions: Easily manage your financial records.
+Monthly spending summary (very useful!)
 
-Monthly Spending Summary: Get a clear picture of your expenses over time.
+Save and delete transactions
 
-Data Persistence: Your data is saved locally, ensuring it's always available.
+🧑‍💻 How to Use It
+Open your terminal or command prompt.
 
-# How to Use
-Run the Application: Execute the finance_tracker.py file to start the tracker.
+Run the finance_tracker.py file using Python.
 
-Follow the Menu: The user-friendly menu guides you through adding transactions, viewing summaries, and more.
+A menu will appear—just follow the options to use different features.
 
-Save Your Data: Ensure your transactions are saved securely by choosing the save option.
+Don’t forget to save before exiting so your data stays safe!
 
-# Tests
-The project includes unit tests to ensure functionality. Run them using the test files in the tests/ directory.
+📁 What Each File Does
+finance_tracker.py
+This is the main file that connects everything. It runs the program and saves your data when you exit.
 
-This README.md file provides a clear overview of your project, its features, and how to use it, making it easier for users to get started with your personal finance tracker.
+📅 Date Handling (datetime)
+I used the datetime module to group expenses by month. It helps in showing how much you spent each month.
 
-#
+Like converting "2025-04-05" into "2025-04" format using:
+
+strptime() – to read the date
+
+strftime("%Y-%m") – to format it for monthly grouping
+
+💾 Storing Data (JSON)
+All the transactions are saved in a file called transactions.json.
+
+load_transactions() – loads existing data
+
+save_transactions() – saves all the current data
+
+So even if you close the app, you don’t lose your transactions.
+
+🧑‍💻 Menu & User Input (user_interface.py)
+This part shows the menu and handles your inputs. You can:
+
+Add a transaction
+
+Print all transactions
+
+Delete one if needed
+
+View monthly summaries, balance, etc.
+
+🧰 Utility Functions (utils.py)
+I added some checks to make sure the input is correct:
+
+validate_date() – checks if the date is in YYYY-MM-DD format
+
+validate_amount() – checks if the amount is a number
+
+🧪 Tests
+There are some basic test files in the tests/ folder to check if the important parts work properly. You can run them using Python's unittest module.
+
